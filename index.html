@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact</title>
+</head>
+<body>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align: right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 14em;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+<center>  
+</head>
+<body>
+<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Online Form</h2> 
+
+ <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name 
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+
+<p>
+<label>Email 
+<input type="email" name="email_address">
+</label>
+</p>
+	
+   <p>
+<label>Address 
+<input type="email" name="email_address">
+</label>
+</p>
+   
+<p>
+<label>Type of Chair 
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="emperor" >Emperor Chair</option>
+<option value="classic" >Classic Chair</option>
+</select>
+</label> 
+</p>
+<p>
+<label>Color
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="red" >Red</option>
+<option value="blue" >Blue</option>
+<option value="black" >Black</option>
+<option value="orange" >Orange</option>
+<option value="yellow" >Yellow</option>
+<option value="green" >Green</option>
+<option value="white" >White</option>
+</select>
+</label> 
+</p>
+<p>
+<label> 
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Purchase</button></p>
+
+</form>
+  </body>
+  </html>
